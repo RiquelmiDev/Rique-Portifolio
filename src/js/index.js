@@ -20,6 +20,13 @@ function makeModalDraggable(modal) {
   modal.find('.modal-dialog').draggable({
     handle: ".modal-header"
   });
+
+  /* const modalElement = document.getElementById(modal);
+  // Altera o estilo para `display: flex`
+  const modalDialog = modalElement.querySelector('.modal-dialog');
+  modalDialog.style.display = 'flex';
+  modalDialog.style.alignItems = 'center'; // Alinha verticalmente
+  modalDialog.style.justifyContent = 'center'; // Centraliza horizontalmente */
 }
 
 // Script para modal "Sobre"

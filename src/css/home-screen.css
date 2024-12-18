@@ -43,6 +43,12 @@
     z-index: 1100; /* Um valor maior que o modal padrão do Bootstrap */
 }
 
+@media (max-width: 500px) {
+    #home-screen .pastas-container{
+        z-index: 1000
+    }
+}
+
 #home-screen .pastas-container .pasta-content-container{
     display: flex;
     flex-direction: column;

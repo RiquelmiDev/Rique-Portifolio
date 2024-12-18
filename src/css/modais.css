@@ -3,8 +3,33 @@
   z-index: 1000 !important; /* Garante que o modal está no topo desejado */
 }
 
+@media (max-width: 500px) {
+    .modal{
+        z-index: 1100 ;
+    }
+}
+
+
 .modal-backdrop {
   z-index: 999 !important; /* Ajustando o backdrop */
+}
+
+.modal-dialog{
+    margin: 0 auto !important;
+    padding: 100px 0;
+    bottom: 10%;
+    left: 0;
+    cursor: move;
+    max-width: max-content !important;
+
+}
+
+@media (max-width: 500px) {
+    .modal-dialog{
+        top: 0 !important;
+        bottom: 0;
+        left: 0 !important;
+    }
 }
 
 .modal-header{
@@ -61,8 +86,14 @@
     width: auto;
 }
 
+@media (max-width: 500px) {
+    .modal-content{
+        width: 100% !important;
+    }
+}
+
 .modal-content .modal-body{
-    padding: 70px 30px;
+    padding: 50px 30px;
 }
 
 .modal-content .modal-body .sobre-container{
@@ -72,11 +103,18 @@
 }
 
 .modal-content .modal-body .sobre-container .img-rique-container{
-    width: 500px;
-    height: 500px;
+    width: 31.15rem;
+    height: 31.25rem;
     background-color: #EC0B43;
     border-radius: 10px;
     transition: all 0.1s ease;
+}
+
+@media (max-width: 500px) {
+    .modal-content .modal-body .sobre-container .img-rique-container{
+        width: 200px;
+        height: 200px;
+    }
 }
 
 .modal-content .modal-body .sobre-container .img-rique-container:hover{
@@ -95,6 +133,18 @@
 
 .modal-content .modal-body .sobre-container .img-rique-container img{
     transform: translatey(-3.6%);
+   
+}
+
+@media (max-width: 500px) {
+    .modal-content .modal-body .sobre-container .img-rique-container img{
+        width: 70px;
+        height: 70px;
+    }
+
+    .modal-content .modal-body .sobre-container .sobre-content-container {
+        display: none !important;
+    }
 }
 
 .modal-content .modal-body .sobre-container .sobre-content-container {
@@ -135,7 +185,14 @@
     flex-direction: column;
     gap: 30px;
     padding: 10px;
-    width: 500px;
+    width: 31.25rem;
+}
+
+@media (max-width: 500px) {
+    .modal-content .modal-body .contato-container{
+        width: 18.75rem;
+        padding: 20px 10px;
+    }
 }
 
 .modal-content .modal-body .contato-container strong{
@@ -162,21 +219,34 @@
 }
 
 .modal-content .modal-body .contato-container .groups-input input, select{
-    height: 40px;
+    height: 2.5rem;
 }
 
 .modal-content .modal-body .contato-container .groups-input textarea{
-    height: 200px;
+    height: 10rem;
     resize: none;
     scrollbar-color: #292929 #555555;
 }
 
 .modal-content .modal-body .contato-container button{
-    flex: 1;
+    /* flex: 1; */
     background-color: #25d366;
-    border-radius: 10px;
-    padding: 10px;
-    font-size: 20px;
+    border-radius: 0.6rem;
+    padding: 0.6rem;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 500px) {
+
+    .modal-content .modal-body .contato-container .groups-input{
+        
+        gap: 2.5px;
+    }
+
+    .modal-content .modal-body .contato-container .groups-input textarea{
+        height: 5rem;
+    }
+    
 }
 
 
