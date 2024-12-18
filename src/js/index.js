@@ -15,34 +15,52 @@ jQuery(document).ready(function($) {
     });
 });
 
-// script para mostrar e tornar o modal arrastavel
-$(document).ready(function () {
-    $('#pasta-sobre').on("dblclick", function () {
-      const modalSobre = new bootstrap.Modal(document.getElementById('modalSobre'), {
-        backdrop: false,
-        keyboard: true,
-      });
-      modalSobre.show();
-  
-      // Tornando o modal  arrastável
-      $('.modal-dialog').draggable({
-        handle: ".modal-header"
-      });
-    });
+// Função que deixa o modal arrastável
+function makeModalDraggable(modal) {
+  modal.find('.modal-dialog').draggable({
+    handle: ".modal-header"
   });
+}
 
-// modal contato
+// Script para modal "Sobre"
 $(document).ready(function () {
-    $('#pasta-contato').on("dblclick", function () {
-      const modalSobre = new bootstrap.Modal(document.getElementById('modalContato'), {
-        backdrop: false,
-        keyboard: true,
-      });
-      modalSobre.show();
-  
-      // Tornando o modal  arrastável
-      $('.modal-dialog').draggable({
-        handle: ".modal-header"
-      });
+  $('#pasta-sobre').on("dblclick", function () {
+    const modalSobre = new bootstrap.Modal(document.getElementById('modalSobre'), {
+      backdrop: false,
+      keyboard: true,
+      focus: false,
     });
+    modalSobre.show();
+    
+    // deixa o modal arrastável
+    makeModalDraggable($('#modalSobre'));
   });
+});
+
+// Script para modal "Contato"
+$(document).ready(function () {
+  $('#pasta-contato').on("dblclick", function () {
+    const modalContato = new bootstrap.Modal(document.getElementById('modalContato'), {
+      backdrop: false,
+      keyboard: true,
+      focus: false,
+    });
+    modalContato.show();
+    
+    makeModalDraggable($('#modalContato'));
+  });
+});
+
+// Script para modal "Projetos"
+$(document).ready(function () {
+  $('#pasta-projetos').on("dblclick", function () {
+    const modalProjetos = new bootstrap.Modal(document.getElementById('modalProjetos'), {
+      backdrop: false,
+      keyboard: true,
+      focus: false,
+    });
+    modalProjetos.show();
+    
+    makeModalDraggable($('#modalProjetos'));
+  });
+});

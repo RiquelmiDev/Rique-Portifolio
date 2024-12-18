@@ -39,6 +39,8 @@
     padding: 20px;
     margin: 0;
     text-align: center;
+    position: relative; /* Garante que a hierarquia de z-index seja respeitada */
+    z-index: 1100; /* Um valor maior que o modal padrão do Bootstrap */
 }
 
 #home-screen .pastas-container .pasta-content-container{
@@ -63,18 +65,4 @@
 }
 
 
-/* modal Sobre styles config */
-
-.modal-content{
-    background-color: #292929;
-}
-
-.modal-header{
-    background-color: #1E1E1E;
-
-}
-
-.modal-header, .modal-body{
-    border-bottom: none;
-}
 

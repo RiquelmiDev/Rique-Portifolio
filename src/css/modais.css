@@ -1,4 +1,12 @@
 /* global modal styles */
+.modal{
+  z-index: 1000 !important; /* Garante que o modal está no topo desejado */
+}
+
+.modal-backdrop {
+  z-index: 999 !important; /* Ajustando o backdrop */
+}
+
 .modal-header{
     background-color: #1E1E1E;
     padding: 0.5rem 1rem;
@@ -109,10 +117,13 @@
     font-size: 1rem;
 }
 
-.modal-content .modal-body .sobre-container .sobre-content-container button{
+.modal-content .modal-body .sobre-container .sobre-content-container a{
     background-color: #25d366;
     border-radius: 10px;
     padding: 0.5rem  1rem;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
 }
 
 
@@ -166,4 +177,28 @@
     border-radius: 10px;
     padding: 10px;
     font-size: 20px;
+}
+
+
+/* Modal Projetos */
+
+.modal-content .modal-body .projetos-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    overflow-y: scroll;
+    gap: 40px;
+    padding: 10px 40px;
+    width: 800px;
+    max-height: 500px;
+}
+
+.modal-content .modal-body .projetos-container::-webkit-scrollbar{
+    background-color: #1E1E1E;
+    border-radius: 10px;
+    width: 0.9rem;
+}
+.modal-content .modal-body .projetos-container::-webkit-scrollbar-thumb{
+    background-color: #555555;
+    border-radius: 10px;
 }

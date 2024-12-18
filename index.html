@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./src/css/contato.css">
     <link rel="stylesheet" href="./src/css/projetos.css">
     <link rel="stylesheet" href="./src/css/modais.css">
+    <link rel="stylesheet" href="./src/css/cardsProject.css">
 </head>
 <body>
     <main id="main-content">
@@ -72,34 +73,34 @@
                 <div class="col-6 ">
                     <div class="pasta-content-container" id="pasta-sobre">
                         <img src="./src/assets/icons/sobreArquivoIcon.png" alt="icone de arquivo de texto" title="icone de arquivo de texto">
-                        <h2 id="nome-pasta">Sobre.txt</h2>
+                        <h2 class="nome-pasta">Sobre.txt</h2>
                     </div>
-                    <div class="pasta-content-container">
+                    <div class="pasta-content-container" id="pasta-projetos">
                         <img src="./src/assets/icons/pasta.png" alt="icone de pasta amarelo com folhas brancas dentro " title="Icone de pasta">
-                        <h2 id="nome-pasta">Projetos</h2>
+                        <h2 class="nome-pasta">Projetos</h2>
                     </div>
                     <div class="pasta-content-container">
                         <img src="./src/assets/icons/pasta.png" alt="icone de pasta amarelo com folhas brancas dentro" title="Icone de pasta">
-                        <h2 id="nome-pasta">Skills</h2>
+                        <h2 class="nome-pasta">Skills</h2>
                     </div>
                     <div class="pasta-content-container">
                         <img src="./src/assets/icons/pasta.png" alt="icone de pasta amarelo com folhas brancas dentro" title="Icone de pasta">
-                        <h2 id="nome-pasta">Games</h2>
+                        <h2 class="nome-pasta">Games</h2>
                     </div>
                 </div>
 
                 <div class="col-6">
                     <div class="pasta-content-container">
                         <img src="./src/assets/icons/pasta.png" alt="icone de pasta amarelo com folhas brancas dentro" title="Icone de pasta">
-                        <h2 id="nome-pasta">Certificações</h2>
+                        <h2 class="nome-pasta">Certificações</h2>
                     </div>
                     <div class="pasta-content-container">
                         <img src="./src/assets/icons/pasta.png" alt="icone de pasta amarelo com folhas brancas dentro" title="Icone de pasta">
-                        <h2 id="nome-pasta">Social</h2>
+                        <h2 class="nome-pasta">Social</h2>
                     </div>
                     <div class="pasta-content-container" id="pasta-contato">
                         <img src="./src/assets/icons/envelove-icon.png" alt="icone de envelope" title="icone de envelope">
-                        <h2 id="nome-pasta">Contato</h2>
+                        <h2 class="nome-pasta">Contato</h2>
                     </div>
                 </div>
             </div>
@@ -141,7 +142,7 @@
                                     Olá! Me chamo Riquelmi, um desenvolvedor apaixonado por transformar ideias em realidade através da tecnologia. Sempre gostei de criar coisas como hobby e, quando percebi, me vi diante deste mundo incrível da programação.
                                     <br>
                                     No meu tempo livre, gosto de assistir animes/séries, ouvir música, explorar coisas novas, ler, e experimentar novas tecnologias para construir projetos paralelos divertidos.</p>
-                                <button id="btn-zapzap"><i class="fa-brands fa-whatsapp"></i> Fale Comigo!</button>
+                                <a id="btn-zapzap" href="https://api.whatsapp.com/send?phone=5575988484622&text=Ol%C3%A1!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20saber%20mais%20sobre%20seus%20projetos.%20Podemos%20conversar?" target="_blank"><i class="fa-brands fa-whatsapp"></i> Fale Comigo!</a>
                             </div>
 
                         </div>
@@ -158,7 +159,7 @@
 
                         <div class="info-pastas-modal-container">
                             <div class="info-pastas-abertas">
-                                <h2 id="nome-pasta-modal">sobre.txt</h2>
+                                <h2 id="nome-pasta-modal">contato</h2>
                                 <button id="btn-close-pasta-arvore"><i class="fa-solid fa-circle-xmark"></i></button>
                             </div>
                         </div>
@@ -205,6 +206,95 @@
                         </div>
                     </div>
 
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Modal Projetos -->
+        <div class="modal fade" id="modalProjetos" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+
+                        <div class="info-pastas-modal-container">
+                            <div class="info-pastas-abertas">
+                                <h2 id="nome-pasta-modal">projetos</h2>
+                                <button id="btn-close-pasta-arvore"><i class="fa-solid fa-circle-xmark"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="action-icons-modal">
+
+                            <img src="./src/assets/icons/mini-icon.png" alt="icone de minimizar modal">
+                            <img src="./src/assets/icons/full-icon.png" alt="icone de maximizar modal">
+                            <img src="./src/assets/icons/close-icon.png" alt="icone de fechar modal" data-bs-dismiss="modal" aria-label="Close">
+
+                        </div>
+                        <button type="button" class="close" ></button>
+                    </div>
+                    
+                    <div class="modal-body">
+                        <div class="projetos-container">
+                            <h1>Projetos</h1>
+                            <div class="projeto-content-container">
+                                
+                                <div class="cards">
+                                    <div class="card red">
+
+                                        <img src="./src/assets/img/projetos/projeto-foto-card.png" alt="Foto do App Nearby" title="Foto do App Nearby">
+
+                                        <div class="text-info-container">
+                                            <div class="stack-icons">
+                                                
+                                            </div>
+                                            <div class="info-text">
+                                                <h2>Nearby App</h2>
+                                                <p>Aplicação desenvolvida durante </p>
+                                                <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Github</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="card blue">
+                                        
+                                        <img src="./src/assets/img/projetos/airconditioner.png" alt="foto projeto airconditioner" title="foto projeto airconditioner">
+
+                                        <div class="text-info-container">
+                                            <div class="stack-icons">
+                                                
+                                            </div>
+                                            <div class="info-text">
+                                                <h2>Airconditioner</h2>
+                                                <p>Aplicação desenvolvida durante </p>
+                                                <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Github</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="card green">
+                                        
+                                        <img src="./src/assets/img/projetos/cineKaizoku.png" alt="Foto do projeto cineKaizoku" title="Foto do projeto cineKaizoku">
+
+                                        <div class="text-info-container">
+                                            <div class="stack-icons">
+                                                
+                                            </div>
+                                            <div class="info-text">
+                                                <h2>Nearby App</h2>
+                                                <p>Aplicação desenvolvida durante </p>
+                                                <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Github</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
