@@ -175,16 +175,16 @@
                     </div>
                     
                     <div class="modal-body">
-                        <div class="contato-container">
+                        <form class="contato-container" id="form-contato">
                             <strong>Contate-me</strong>
 
                             <div class="groups-input">
                                 <label for="fromPersonInput">De:</label>
-                                <input type="text" id="fromPersonInput" name="fromPersonInput" placeholder="Digite seu nome">
+                                <input type="email" id="fromPersonInput" name="fromPersonInput" placeholder="Digite seu melhor e-mail para contato" required>
                             </div>
                             <div class="groups-input">
                                 <label for="assuntoInput">Assunto:</label>
-                                <select name="assuntoInput" id="assuntoInput">
+                                <select name="assuntoInput" id="assuntoInput" required>
                                     <option value="">Selecione o Assunto</option>
                                     <option value="">Solicitação de Orçamento</option>
                                     <option value="">Oportunidades de Trabalho</option>
@@ -198,12 +198,12 @@
                             </div>
                             <div class="groups-input">
                                 <label for="menssageInput">Menssagem:</label>
-                                <textarea name="menssageInput" id="menssageInput"></textarea placeholder="Digite a menssagem para o contato">
+                                <textarea name="menssageInput" id="menssageInput" required></textarea placeholder="Digite a menssagem para o contato">
                             </div>
 
                             <button id="btn-enviar-contato">Enviar <i class="fa-regular fa-paper-plane"></i></button>
 
-                        </div>
+                        </form>
                     </div>
 
                 </div>
