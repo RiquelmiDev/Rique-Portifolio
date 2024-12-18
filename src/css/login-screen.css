@@ -1,0 +1,71 @@
+#login-screen{
+    height: 100%;
+    display: flex;
+}
+
+#login-screen .login-content-container{
+    padding: 50px;
+}
+
+#login-screen .login-content-container img {
+    width: 70%;
+    margin-bottom: 40px;
+}
+
+#login-screen .login-content-container .info-Rique {
+    margin-bottom: 96px;
+}
+
+#login-screen .login-content-container .info-Rique h1{
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+#login-screen .login-content-container .info-Rique p{
+    font-size: 1.8rem;
+    color: #aaa8a8;
+    font-weight: bold;
+}
+
+#login-screen .login-content-container .input-group-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 17px;
+    justify-content: center;
+}
+#login-screen .login-content-container input{
+    padding: 0 20px;
+    border-radius: 15px;
+    height: 58px;
+    background-color: #6e6e6e;
+}
+
+#login-screen .login-content-container input:focus{
+    border: none;
+}
+
+#login-screen .login-content-container input::-webkit-input-placeholder{
+    text-align: center;
+    color: #aaa8a8;
+}
+
+#login-screen .login-content-container button {
+    background-color: #7AE7C7;
+    flex: 1;
+    font-size: 25px;
+    width: 50px;
+    border-radius: 15px;
+    text-align: center;
+    transition: all 0.2s;
+}
+
+#login-screen .login-content-container button:hover{
+    transform: scale(1.05);
+}
+
+#login-screen .login-content-container button i{
+    color: black;
+}
+
+
+

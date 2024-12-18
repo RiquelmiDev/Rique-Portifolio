@@ -1,0 +1,80 @@
+#home-screen{
+    height: 100%;
+    background-color: #221E22 ;
+    display: flex;
+}
+
+#header-container{
+    background-color: #292929;
+    width: 100%;
+    height: 60px;
+    padding: 0 57px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+}
+
+#header-container #navbar-container{
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.right-icons-nav{
+    display: flex;
+    gap: 50px;
+}
+
+
+
+.right-icons-nav img , .home-icon-container img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+#home-screen .pastas-container{
+    width: 300px;
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+}
+
+#home-screen .pastas-container .pasta-content-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    /* margin: 30px 0; */
+    padding: 15px 0;
+}
+
+#home-screen .pastas-container .pasta-content-container:hover{
+    background-color: rgba(255, 255, 255, 0.10)
+}
+
+#home-screen .pastas-container .pasta-content-container img {
+    width: 53px;
+}
+
+#home-screen .pastas-container .pasta-content-container h2{
+    font-size: 14px;
+}
+
+
+/* modal Sobre styles config */
+
+.modal-content{
+    background-color: #292929;
+}
+
+.modal-header{
+    background-color: #1E1E1E;
+
+}
+
+.modal-header, .modal-body{
+    border-bottom: none;
+}
+

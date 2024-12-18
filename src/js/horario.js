@@ -1,4 +1,5 @@
 const horarioStrongHtml = document.getElementById('horario-tempo-real');
+const dataSpanHtml = document.getElementById('data-tempo-real');
 
 // Atualiza a data e hora dinamicamente
 function atualizarDataHora() {
@@ -6,15 +7,24 @@ function atualizarDataHora() {
 
     const dia = String(now.getDate()).padStart(2, '0');
     const mes = String(now.getMonth() + 1).padStart(2, '0');
-   
-
+    const diaSemana = obterNomeDiaSemana(now.getDay());
+    
     const horas = String(now.getHours()).padStart(2, '0');
     const minutos = String(now.getMinutes()).padStart(2, '0');
-
-
     
-    const dataHoraFormatada = `${dia} DE ${obterNomeMes(mes).toUpperCase()}HORÁRIO: ${horas}:${minutos}:${segundos}`;
-    document.getElementById('dataHora-sangria').innerHTML = dataHoraFormatada;
+    const HoraFormatada = `${horas}:${minutos}`;
+    const dataFormatada = `${diaSemana}, ${dia} de ${obterNomeMes(mes)}`;
+    
+    horarioStrongHtml.textContent = HoraFormatada;
+    dataSpanHtml.textContent = dataFormatada;
+}
+
+function obterNomeDiaSemana(dia) {
+    const diasSemana = [
+        'Domingo', 'Segunda-feira', 'Terça-feira', 'Quarta-feira', 
+        'Quinta-feira', 'Sexta-feira', 'Sábado'
+    ];
+    return diasSemana[dia];
 }
 
 function obterNomeMes(mes) {
@@ -27,4 +37,5 @@ function obterNomeMes(mes) {
 
 setInterval(atualizarDataHora, 1000);
 atualizarDataHora();
+
 

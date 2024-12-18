@@ -1,0 +1,169 @@
+/* global modal styles */
+.modal-header{
+    background-color: #1E1E1E;
+    padding: 0.5rem 1rem;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.modal-header .action-icons-modal{
+    display: flex;
+    gap: 10px;
+}
+
+.modal-header .action-icons-modal img{
+    cursor: pointer;
+    width: 30px;
+}
+
+.modal-header, .modal-body{
+    border-bottom: none;
+}
+
+.modal-header .info-pastas-modal-container{
+    flex: 1;
+    gap: 10px;
+    overflow-x: hidden;
+    display: flex;
+}
+
+.modal-header .info-pastas-modal-container .info-pastas-abertas{
+    background-color: #555555;
+    max-width: 125px;
+    display: flex;
+    gap: 10px;
+    padding: 0 10px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.modal-header .info-pastas-modal-container .info-pastas-abertas h2 {
+    font-size: 1rem;
+}
+
+.modal-header .info-pastas-modal-container .info-pastas-abertas button i:hover{
+    color: red;
+}
+
+/* modal Sobre styles config */
+
+.modal-content{
+    background-color: #292929;
+    width: auto;
+}
+
+.modal-content .modal-body{
+    padding: 70px 30px;
+}
+
+.modal-content .modal-body .sobre-container{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.modal-content .modal-body .sobre-container .img-rique-container{
+    width: 500px;
+    height: 500px;
+    background-color: #EC0B43;
+    border-radius: 10px;
+    transition: all 0.1s ease;
+}
+
+.modal-content .modal-body .sobre-container .img-rique-container:hover{
+    background-image: 
+    url('../../src/assets/icons/arrow\ Este\ Sou\ Eu.png'), 
+    url('../../src/assets/icons/FirulasFoto/estrelas.png'),
+    url('../../src/assets/icons/FirulasFoto/heart.png'),
+    url('../../src/assets/icons/FirulasFoto/continued.png');
+    background-repeat: no-repeat;
+    background-position: 
+    top 10% left 90% , 
+    bottom left, 
+    top 10% right 45%,
+    bottom 30% right 10%;
+}
+
+.modal-content .modal-body .sobre-container .img-rique-container img{
+    transform: translatey(-3.6%);
+}
+
+.modal-content .modal-body .sobre-container .sobre-content-container {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 90px;
+    background-color: #555555;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.modal-content .modal-body .sobre-container .sobre-content-container h1{
+    font-size: 2.5rem;
+}
+
+.modal-content .modal-body .sobre-container .sobre-content-container p{
+    font-size: 1rem;
+}
+
+.modal-content .modal-body .sobre-container .sobre-content-container button{
+    background-color: #25d366;
+    border-radius: 10px;
+    padding: 0.5rem  1rem;
+}
+
+
+
+/* Modal Contato */
+
+.modal-content .modal-body .contato-container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 10px;
+    width: 500px;
+}
+
+.modal-content .modal-body .contato-container strong{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+.modal-content .modal-body .contato-container .groups-input{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.modal-content .modal-body .contato-container .groups-input input, select, textarea{
+    border-radius: 10px;
+    background-color: #555555;
+    border: 1.5px solid #555555; /* Ganbiarra para parar de mecher quando input focar e a borda empurrar os outros elementos */
+    padding: 10px;
+}
+
+.modal-content .modal-body .contato-container .groups-input input:focus, select:focus, textarea:focus{
+    border: 1.5px solid #EDE8D0;
+}
+
+.modal-content .modal-body .contato-container .groups-input input, select{
+    height: 40px;
+}
+
+.modal-content .modal-body .contato-container .groups-input textarea{
+    height: 200px;
+    resize: none;
+    scrollbar-color: #292929 #555555;
+}
+
+.modal-content .modal-body .contato-container button{
+    flex: 1;
+    background-color: #25d366;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+}
