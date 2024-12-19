@@ -19,6 +19,7 @@
     flex: 1;
     display: flex;
     justify-content: space-between;
+    gap: 50px;
 }
 
 .right-icons-nav{
@@ -42,6 +43,12 @@
     position: relative; /* Garante que a hierarquia de z-index seja respeitada */
     z-index: 1100; /* Um valor maior que o modal padrão do Bootstrap */
 }
+
+.pasta-content-container img{
+    user-select: none;
+    pointer-events: none
+}
+
 
 @media (max-width: 500px) {
     #home-screen .pastas-container{

@@ -6,6 +6,7 @@
 @media (max-width: 500px) {
     .modal{
         z-index: 1100 ;
+        height: calc(100% - 60px);
     }
 }
 
@@ -19,7 +20,6 @@
     padding: 100px 0;
     bottom: 10%;
     left: 0;
-    cursor: move;
     max-width: max-content !important;
 
 }
@@ -29,6 +29,8 @@
         top: 0 !important;
         bottom: 0;
         left: 0 !important;
+        padding: 20px 0 100px;
+        padding: 0;
     }
 }
 
@@ -37,6 +39,7 @@
     padding: 0.5rem 1rem;
     justify-content: space-between;
     gap: 15px;
+    
 }
 
 .modal-header .action-icons-modal{
@@ -89,6 +92,7 @@
 @media (max-width: 500px) {
     .modal-content{
         width: 100% !important;
+        height: 100%;
     }
 }
 
@@ -102,6 +106,15 @@
     gap: 100px;
 }
 
+@media (max-width: 500px) {
+    .modal-content .modal-body .sobre-container{
+        flex-direction: column;
+        gap: 20px;
+        overflow: scroll;
+        height: 600px;
+    }
+}
+
 .modal-content .modal-body .sobre-container .img-rique-container{
     width: 31.15rem;
     height: 31.25rem;
@@ -112,8 +125,8 @@
 
 @media (max-width: 500px) {
     .modal-content .modal-body .sobre-container .img-rique-container{
-        width: 200px;
-        height: 200px;
+        width: 100%;
+    
     }
 }
 
@@ -138,12 +151,16 @@
 
 @media (max-width: 500px) {
     .modal-content .modal-body .sobre-container .img-rique-container img{
-        width: 70px;
-        height: 70px;
+        transform: translatey(0%);
+        height: 100%;
     }
 
-    .modal-content .modal-body .sobre-container .sobre-content-container {
-        display: none !important;
+    .modal-content .modal-body .sobre-container .img-rique-container:hover{
+        background-position: 
+        top 15% right 1% , 
+        bottom left, 
+        top 3% right 37%,
+        bottom 30% right 2%;
     }
 }
 
@@ -157,6 +174,15 @@
     background-color: #555555;
     border-radius: 10px;
     padding: 15px;
+}
+
+@media (max-width: 500px) {
+    .modal-content .modal-body .sobre-container .sobre-content-container{
+        /* flex: 1; */
+        width: auto;
+        gap: 40px;
+        height: auto;
+    }
 }
 
 .modal-content .modal-body .sobre-container .sobre-content-container h1{
@@ -174,6 +200,23 @@
     cursor: pointer;
     color: white;
     text-decoration: none;
+}
+
+@media (max-width: 500px) {
+    .modal-content .modal-body .sobre-container .sobre-content-container h1{
+        font-size: 1.5rem;
+    }
+    
+    .modal-content .modal-body .sobre-container .sobre-content-container p{
+        font-size: 0.7rem;
+    }
+    
+    .modal-content .modal-body .sobre-container .sobre-content-container a{
+        padding: 0.2rem  0.5rem;
+        cursor: pointer;
+        color: white;
+        text-decoration: none;
+    }
 }
 
 
@@ -262,7 +305,14 @@
     width: 800px;
     max-height: 500px;
 }
-
+@media (max-width: 500px) {
+    .modal-content .modal-body .projetos-container{
+        gap: 40px;
+        padding: 10px 40px;
+        width: auto;
+        max-height: 700px;
+    }
+}
 .modal-content .modal-body .projetos-container::-webkit-scrollbar{
     background-color: #1E1E1E;
     border-radius: 10px;
