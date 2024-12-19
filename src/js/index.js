@@ -71,3 +71,17 @@ $(document).ready(function () {
     makeModalDraggable($('#modalProjetos'));
   });
 });
+
+// Script para modal "Skills"
+$(document).ready(function () {
+  $('#pasta-skills').on("dblclick", function () {
+    const modalProjetos = new bootstrap.Modal(document.getElementById('modalSkills'), {
+      backdrop: false,
+      keyboard: true,
+      focus: false,
+    });
+    modalProjetos.show();
+    
+    makeModalDraggable($('#modalSkills'));
+  });
+});

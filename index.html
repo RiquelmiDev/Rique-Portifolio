@@ -1,11 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="author" content="Riquelmi Dos Santos Santana | Radiance" />
+    <meta name="description"
+        content="Portfólio de Riquelmi Dos Santos, desenvolvedor full-stack usando React, Node.js e outras tecnologias para aplicações web modernas. Confira meus projetos e entre em contato!" />
+    <meta name="keywords"
+        content="desenvolvedor, portfólio, programador, desenvolvimento web, front-end, back-end, full-stack, HTML, CSS, JavaScript, React, Node.js, projetos, tecnologia, software, programador freelance, desenvolvimento de aplicativos, UI/UX, Git, API, portfólio dev, design responsivo">
+
+    <link rel="alternate" href="pt-br" hreflang="pt-br" />
+
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:url" content="https://riqueportifoliodev.netlify.app/" />
+    <meta property="og:title" content="Portfólio Riquelmi Santos" />
+    <meta property="og:image" content="./src/assets/img/projetos/portifolio-img.png" />
+    <meta property="og:description"
+        content="Confira o portfólio de Riquelmi Santos, desenvolvedor Full-stack. Veja meus projetos, habilidades e entre em contato para colaborarmos!" />
+
+    <meta name="theme-color" content="#4492D4">
+
+    <meta name="apple-mobile-web-app-status-bar-style" content="#4492D4" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="apple-touch-icon" href="./src/assets/icons/pcIcon.png" />
+
+    <meta property="business:contact_data:country_name" content="Brasil" />
+    <meta property="business:contact_data:website" content="https://riqueportifoliodev.netlify.app/" />
+    <meta property="business:contact_data:region" content="BA" />
+    <meta property="business:contact_data:email" content="Riquelmisantospro@gmail.com" />
+    <meta property="business:contact_data:phone_number" content="75988484622" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:description"
+        content="Confira o portfólio de Riquelmi Santos, desenvolvedor Full-stack. Veja meus projetos, habilidades e entre em contato para colaborarmos!" />
+    <meta name="twitter:title" content="Portfólio Riquelmi Santos" />
+    <meta name="twitter:image" content="https://riqueportifoliodev.netlify.app/" />
+
+    <meta name="geo.placename" content="Santo Antonio de Jesus - BA" />
+    <meta name="geo.region" content="BR" />
+    <meta name="description" content="Portfólio de Riquelmi Santos, desenvolvedor Full-stack." />
+    <link rel="canonical" href="https://riqueportifoliodev.netlify.app/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta name="format-detection" content="telephone=75988484622">
+
+
+    <title>Rique | Portifolio</title>
+    <link rel="icon" type="image/x-icon" href="./src/assets/icons/pcIcon.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css" />
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
 
@@ -20,6 +69,7 @@
     <link rel="stylesheet" href="./src/css/modais.css">
     <link rel="stylesheet" href="./src/css/cardsProject.css">
 </head>
+
 <body>
     <main id="main-content">
         <!-- Tela de Bloqueio -->
@@ -37,14 +87,14 @@
         <!-- Tela de login -->
         <section id="login-screen" class="full-center" style="display: none;">
             <div class="login-content-container">
-        
+
                 <img src="./src/assets/img/user.png" alt="">
-        
+
                 <div class="info-Rique">
                     <h1>Riquelmi Santos</h1>
                     <p>Desenvolvedor Full Stack</p>
                 </div>
-        
+
                 <div class="input-group-container row">
                     <input class="col-12 col-sm-10" type="text" placeholder="Digite uma senha para entrar">
                     <button id="btn-login"><i class="fa-solid fa-arrow-right"></i></button>
@@ -59,11 +109,13 @@
             <header id="header-container">
                 <nav id="navbar-container">
                     <div class="home-icon-container">
-                        <img src="./src/assets/icons/home 1.png" alt="icone de casa referenciando a home do site" title="icone de casa referenciando a home do site">
+                        <img src="./src/assets/icons/home 1.png" alt="icone de casa referenciando a home do site"
+                            title="icone de casa referenciando a home do site">
                     </div>
 
                     <div class="right-icons-nav">
-                        <img src="./src/assets/icons/light-mode 1.png" alt="icone de lampada" title="icone de lampada para alterar para o modo claro">
+                        <img src="./src/assets/icons/light-mode 1.png" alt="icone de lampada"
+                            title="icone de lampada para alterar para o modo claro">
                         <img src="./src/assets/icons/wifi 1.png" alt="icone de wifi" title="icone de wifi">
                         <img src="./src/assets/icons/notification (2) 1.png" alt="icone de notification">
                     </div>
@@ -73,34 +125,41 @@
             <div class="pastas-container row">
                 <div class="col-6 ">
                     <div class="pasta-content-container" id="pasta-sobre" data-target="modalSobre">
-                        <img src="./src/assets/icons/sobreArquivoIcon.png" alt="icone de arquivo de texto" title="icone de arquivo de texto">
+                        <img src="./src/assets/icons/sobreArquivoIcon.png" alt="icone de arquivo de texto"
+                            title="icone de arquivo de texto">
                         <h2 class="nome-pasta">Sobre.txt</h2>
                     </div>
                     <div class="pasta-content-container" id="pasta-projetos" data-target="modalContato">
-                        <img src="./src/assets/icons/pasta.png" alt="icone de pasta amarelo com folhas brancas dentro " title="Icone de pasta">
+                        <img src="./src/assets/icons/pasta.png" alt="icone de pasta amarelo com folhas brancas dentro "
+                            title="Icone de pasta">
                         <h2 class="nome-pasta">Projetos</h2>
                     </div>
-                    <div class="pasta-content-container">
-                        <img src="./src/assets/icons/pasta.png" alt="icone de pasta amarelo com folhas brancas dentro" title="Icone de pasta" data-target="modalProjetos">
+                    <div class="pasta-content-container" id="pasta-skills" data-target="modalSkills">
+                        <img src="./src/assets/icons/pasta.png" alt="icone de pasta amarelo com folhas brancas dentro"
+                            title="Icone de pasta" data-target="modalProjetos">
                         <h2 class="nome-pasta">Skills</h2>
                     </div>
                     <div class="pasta-content-container">
-                        <img src="./src/assets/icons/pasta.png" alt="icone de pasta amarelo com folhas brancas dentro" title="Icone de pasta">
+                        <img src="./src/assets/icons/pasta.png" alt="icone de pasta amarelo com folhas brancas dentro"
+                            title="Icone de pasta">
                         <h2 class="nome-pasta">Games</h2>
                     </div>
                 </div>
 
                 <div class="col-6">
                     <div class="pasta-content-container">
-                        <img src="./src/assets/icons/pasta.png" alt="icone de pasta amarelo com folhas brancas dentro" title="Icone de pasta">
+                        <img src="./src/assets/icons/pasta.png" alt="icone de pasta amarelo com folhas brancas dentro"
+                            title="Icone de pasta">
                         <h2 class="nome-pasta">Certificações</h2>
                     </div>
                     <div class="pasta-content-container">
-                        <img src="./src/assets/icons/pasta.png" alt="icone de pasta amarelo com folhas brancas dentro" title="Icone de pasta">
+                        <img src="./src/assets/icons/pasta.png" alt="icone de pasta amarelo com folhas brancas dentro"
+                            title="Icone de pasta">
                         <h2 class="nome-pasta">Social</h2>
                     </div>
                     <div class="pasta-content-container" id="pasta-contato">
-                        <img src="./src/assets/icons/envelove-icon.png" alt="icone de envelope" title="icone de envelope">
+                        <img src="./src/assets/icons/envelove-icon.png" alt="icone de envelope"
+                            title="icone de envelope">
                         <h2 class="nome-pasta">Contato</h2>
                     </div>
                 </div>
@@ -124,12 +183,13 @@
 
                             <img src="./src/assets/icons/mini-icon.png" alt="icone de minimizar modal">
                             <img src="./src/assets/icons/full-icon.png" alt="icone de maximizar modal">
-                            <img src="./src/assets/icons/close-icon.png" alt="icone de fechar modal" data-bs-dismiss="modal" aria-label="Close">
+                            <img src="./src/assets/icons/close-icon.png" alt="icone de fechar modal"
+                                data-bs-dismiss="modal" aria-label="Close">
 
                         </div>
-                        <button type="button" class="close" ></button>
+                        <button type="button" class="close"></button>
                     </div>
-                    
+
                     <div class="modal-body">
                         <div class="sobre-container">
 
@@ -140,10 +200,17 @@
                             <div class="sobre-content-container">
                                 <h1>💡 SOBRE MIM 💡</h1>
                                 <p>
-                                    Olá! Me chamo Riquelmi, um desenvolvedor apaixonado por transformar ideias em realidade através da tecnologia. Sempre gostei de criar coisas como hobby e, quando percebi, me vi diante deste mundo incrível da programação.
+                                    Olá! Me chamo Riquelmi, um desenvolvedor apaixonado por transformar ideias em
+                                    realidade através da tecnologia. Sempre gostei de criar coisas como hobby e, quando
+                                    percebi, me vi diante deste mundo incrível da programação.
                                     <br>
-                                    No meu tempo livre, gosto de assistir animes/séries, ouvir música, explorar coisas novas, ler, e experimentar novas tecnologias para construir projetos paralelos divertidos.</p>
-                                <a id="btn-zapzap" href="https://api.whatsapp.com/send?phone=5575988484622&text=Ol%C3%A1!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20saber%20mais%20sobre%20seus%20projetos.%20Podemos%20conversar?" target="_blank"><i class="fa-brands fa-whatsapp"></i> Fale Comigo!</a>
+                                    No meu tempo livre, gosto de assistir animes/séries, ouvir música, explorar coisas
+                                    novas, ler, e experimentar novas tecnologias para construir projetos paralelos
+                                    divertidos.
+                                </p>
+                                <a id="btn-zapzap"
+                                    href="https://api.whatsapp.com/send?phone=5575988484622&text=Ol%C3%A1!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20saber%20mais%20sobre%20seus%20projetos.%20Podemos%20conversar?"
+                                    target="_blank"><i class="fa-brands fa-whatsapp"></i> Fale Comigo!</a>
                             </div>
 
                         </div>
@@ -169,23 +236,25 @@
 
                             <img src="./src/assets/icons/mini-icon.png" alt="icone de minimizar modal">
                             <img src="./src/assets/icons/full-icon.png" alt="icone de maximizar modal">
-                            <img src="./src/assets/icons/close-icon.png" alt="icone de fechar modal" data-bs-dismiss="modal" aria-label="Close">
+                            <img src="./src/assets/icons/close-icon.png" alt="icone de fechar modal"
+                                data-bs-dismiss="modal" aria-label="Close">
 
                         </div>
-                        <button type="button" class="close" ></button>
+                        <button type="button" class="close"></button>
                     </div>
-                    
+
                     <div class="modal-body">
-                        <form class="contato-container" id="form-contato">
+                        <form class="contato-container" id="form-contato" action="https://api.sheetmonkey.io/form/ha7USDHgt5gYterVthCwZH" method="post">
                             <strong>Contate-me</strong>
 
                             <div class="groups-input">
                                 <label for="fromPersonInput">De:</label>
-                                <input type="email" id="fromPersonInput" name="fromPersonInput" placeholder="Digite seu melhor e-mail para contato" required>
+                                <input type="email" id="fromPersonInput" name="E-mail"
+                                    placeholder="Digite seu melhor e-mail para contato" required>
                             </div>
                             <div class="groups-input">
                                 <label for="assuntoInput">Assunto:</label>
-                                <select name="assuntoInput" id="assuntoInput" required>
+                                <select name="Assunto" id="assuntoInput" required>
                                     <option value="">Selecione o Assunto</option>
                                     <option value="">Solicitação de Orçamento</option>
                                     <option value="">Oportunidades de Trabalho</option>
@@ -199,7 +268,7 @@
                             </div>
                             <div class="groups-input">
                                 <label for="menssageInput">Menssagem:</label>
-                                <textarea name="menssageInput" id="menssageInput" required></textarea placeholder="Digite a menssagem para o contato">
+                                <textarea name="Menssagem" id="menssageInput" required></textarea placeholder="Digite a menssagem para o contato">
                             </div>
 
                             <button id="btn-enviar-contato">Enviar <i class="fa-regular fa-paper-plane"></i></button>
@@ -264,7 +333,7 @@
                                             </div>
                                             <div class="info-text">
                                                 <h2>Nearby App</h2>
-                                                <p>Aplicação desenvolvida durante </p>
+                                                <p>Aplicação mobile desenvolvida com o intuito de mostrar cupons de desconto em locais cadastrados perto de você</p>
                                                 <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Github</a>
                                             </div>
                                         </div>
@@ -277,11 +346,21 @@
 
                                         <div class="text-info-container">
                                             <div class="stack-icons">
+                                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+
                                                 
+                                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+
+                                                
+                                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+      
+                                                     
+                                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" />
+          
                                             </div>
                                             <div class="info-text">
                                                 <h2>Airconditioner</h2>
-                                                <p>Aplicação desenvolvida durante </p>
+                                                <p>landing page desenvolvida para uma empresa de ar-condicionado. O objetivo é apresentar os serviços e produtos da empresa de forma atrativa, responsiva e profissional.</p>
                                                 <a href="http://" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Github</a>
                                             </div>
                                         </div>
@@ -307,13 +386,15 @@
           
                                                 
                                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" />
+
+                                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" />
           
           
           
                                             </div>
                                             <div class="info-text">
                                                 <h2>CineKaizoku</h2>
-                                                <p>Aplicação desenvolvida durante </p>
+                                                <p>Cine Kaizoku é um projeto que simula um site de streaming de filmes, desenvolvido com intuito de testar minhas habilidades usando PHP e MySQL</p>
                                                 <a href="https://github.com/RiquelmiDev/CineKaizoku" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Github</a>
                                             </div>
                                         </div>
@@ -322,53 +403,7 @@
 
                                     <div class="card red">
 
-                                        <img src="./src/assets/img/projetos/fashionAtacado.png" alt="Foto do FashionAtacado" title="Foto do projeto Nearby">
-
-                                        <div class="text-info-container">
-                                            <div class="stack-icons">
-                                                
-                                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" />
-
-                                                
-                                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
-                                                
-                                                
-                                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" />
-          
-                                                
-                                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" />
-          
-          
-          
-                                            </div>
-                                            <div class="info-text">
-                                                <h2>FashionAtacado</h2>
-                                                <p>Aplicação desenvolvida durante </p>
-                                                <a href="https://github.com/RiquelmiDev/FashionAtacado" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Github</a>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="card blue">
-                                        
-                                        <img src="./src/assets/img/projetos/CheckMate.png" alt="foto projeto airconditioner" title="foto projeto airconditioner">
-
-                                        <div class="text-info-container">
-                                            <div class="stack-icons">
-                                                
-                                            </div>
-                                            <div class="info-text">
-                                                <h2>Airconditioner</h2>
-                                                <p>Aplicação desenvolvida durante </p>
-                                                <a href="https://github.com/RiquelmiDev/CheckMate" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Github</a>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                    <div class="card green">
-                                        
-                                        <img src="./src/assets/img/projetos/beyond-the-spike.png" alt="Foto do projeto cineKaizoku" title="Foto do projeto cineKaizoku">
+                                        <img src="./src/assets/img/projetos/fashionAtacado.png" alt="Foto do FashionAtacado" title="Foto do projeto fashionAtacado">
 
                                         <div class="text-info-container">
                                             <div class="stack-icons">
@@ -386,13 +421,62 @@
           
                                                 
                                                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" />
+
+                                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" />
           
-          
+                                            </div>
+                                            <div class="info-text">
+                                                <h2>FashionAtacado</h2>
+                                                <p>Projeto desenvolvido em equipe durante o curso de Programação Web, tendo como referencia sites de compras de roupas como a Zara.</p>
+                                                <a href="https://github.com/RiquelmiDev/FashionAtacado" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Github</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="card blue">
+                                        
+                                        <img src="./src/assets/img/projetos/CheckMate.png" alt="foto projeto CheckMate" title="foto projeto CheckMate">
+
+                                        <div class="text-info-container">
+                                            <div class="stack-icons">
+
+                                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" />
+                                                
+                                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
+                                                
+                                            </div>
+                                            <div class="info-text">
+                                                <h2>CheckMate</h2>
+                                                <p>Aplicação de lista de tarefas desenvolvida com React. O objetivo é ajudar os usuários a organizarem suas tarefas diárias.</p>
+                                                <a href="https://github.com/RiquelmiDev/CheckMate" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Github</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="card green">
+                                        
+                                        <img src="./src/assets/img/projetos/beyond-the-spike.png" alt="Foto do projeto beyond-the-spike" title="Foto do projeto beyond-the-spike">
+
+                                        <div class="text-info-container">
+                                            <div class="stack-icons">
+                                                
+                                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+
+                                                
+                                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+
+                                                
+                                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+      
+                                                
+                                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg" />
+                    
           
                                             </div>
                                             <div class="info-text">
                                                 <h2>Beyond the Spike</h2>
-                                                <p>Aplicação desenvolvida durante </p>
+                                                <p>Este projeto é uma página web dedicada aos agentes do jogo Valorant, feita no intuito do aprendizado de ultilizações de APIs.</p>
                                                 <a href="https://github.com/RiquelmiDev/Beyond-the-Spike" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> Github</a>
                                             </div>
                                         </div>
@@ -404,11 +488,50 @@
                             </div>
                         </div>
                     </div>
-                    
+                </div>    
+            </div>
+        </div>
+
+
+        <!-- Modal Skills-->
+        <div class="modal fade" id="modalSkills" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+        
+                        <div class="info-pastas-modal-container">
+                            <div class="info-pastas-abertas">
+                                <h2 id="nome-pasta-modal">skills</h2>
+                                <button id="btn-close-pasta-arvore"><i class="fa-solid fa-circle-xmark"></i></button>
+                            </div>
+                        </div>
+        
+                        <div class="action-icons-modal">
+        
+                            <img src="./src/assets/icons/mini-icon.png" alt="icone de minimizar modal">
+                            <img src="./src/assets/icons/full-icon.png" alt="icone de maximizar modal">
+                            <img src="./src/assets/icons/close-icon.png" alt="icone de fechar modal" data-bs-dismiss="modal"
+                                aria-label="Close">
+        
+                        </div>
+                        <button type="button" class="close"></button>
+                    </div>
+        
+                    <div class="modal-body">
+                        
+                    </div>
+
                 </div>
             </div>
         </div>
 
+
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+              <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
         
     </main>
     <!-- Bootstrap -->
@@ -421,5 +544,11 @@
     <!-- Scripts -->
     <script src="./src/js/horario.js"></script>
     <script src="./src/js/index.js"></script>
+
+   <!--  Vlibras -->
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
 </body>
 </html>
