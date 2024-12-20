@@ -21,10 +21,23 @@
     font-weight: bold;
 }
 
-#login-screen .login-content-container .info-Rique p{
+#login-screen .login-content-container .info-Rique span{
     font-size: 1.8rem;
     color: #aaa8a8;
     font-weight: bold;
+}
+
+@media (max-width: 500px) {
+    #login-screen .login-content-container .info-Rique h1{
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    
+    #login-screen .login-content-container .info-Rique span{
+        font-size: 1rem;
+        color: #aaa8a8;
+        font-weight: bold;
+    }
 }
 
 #login-screen .login-content-container .input-group-container {

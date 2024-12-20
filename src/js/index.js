@@ -15,6 +15,14 @@ jQuery(document).ready(function($) {
     });
 });
 
+//mostrar blok-screen ao clicar no home
+jQuery(document).ready(function($) {
+    $("#home-icon").on('click', function() {
+        $("#home-screen").hide();
+        $("#block-screen").show();
+    });
+});
+
 // Função que deixa o modal arrastável
 function makeModalDraggable(modal) {
   modal.find('.modal-dialog').draggable({
@@ -83,5 +91,46 @@ $(document).ready(function () {
     modalProjetos.show();
     
     makeModalDraggable($('#modalSkills'));
+  });
+});
+
+// Script para modal "Games"
+$(document).ready(function () {
+  $('#pasta-games').on("dblclick", function () {
+    const modalProjetos = new bootstrap.Modal(document.getElementById('modalGames'), {
+      backdrop: false,
+      keyboard: true,
+      focus: false,
+    });
+    modalProjetos.show();
+    
+    makeModalDraggable($('#modalGames'));
+  });
+});
+
+// Script para modal "Certificações"
+$(document).ready(function () {
+  $('#pasta-certificados').on("dblclick", function () {
+    const modalProjetos = new bootstrap.Modal(document.getElementById('modalCertificados'), {
+      backdrop: false,
+      keyboard: true,
+      focus: false,
+    });
+    modalProjetos.show();
+    
+    makeModalDraggable($('#modalCertificados'));
+  });
+});
+// Script para modal "Social"
+$(document).ready(function () {
+  $('#pasta-social').on("dblclick", function () {
+    const modalProjetos = new bootstrap.Modal(document.getElementById('modalSocial'), {
+      backdrop: false,
+      keyboard: true,
+      focus: false,
+    });
+    modalProjetos.show();
+    
+    makeModalDraggable($('#modalSocial'));
   });
 });

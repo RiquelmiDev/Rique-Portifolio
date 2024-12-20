@@ -20,9 +20,9 @@
     <meta property="og:description"
         content="Confira o portfólio de Riquelmi Santos, desenvolvedor Full-stack. Veja meus projetos, habilidades e entre em contato para colaborarmos!" />
 
-    <meta name="theme-color" content="#4492D4">
+    <meta name="theme-color" content="#555555">
 
-    <meta name="apple-mobile-web-app-status-bar-style" content="#4492D4" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#555555" />
     <meta name="mobile-web-app-capable" content="yes">
     <link rel="apple-touch-icon" href="./src/assets/icons/pcIcon.png" />
 
@@ -73,7 +73,7 @@
 <body>
     <main id="main-content">
         <!-- Tela de Bloqueio -->
-        <section id="block-screen" style="">
+        <section id="block-screen" >
             <div id="horario-container" class="full-center">
                 <div class="content-horario-container row full-center">
                     <strong id="horario-tempo-real"></strong>
@@ -92,7 +92,7 @@
 
                 <div class="info-Rique">
                     <h1>Riquelmi Santos</h1>
-                    <p>Desenvolvedor Full Stack</p>
+                    <span>Desenvolvedor Full Stack</span>
                 </div>
 
                 <div class="input-group-container row">
@@ -104,13 +104,13 @@
         </section>
 
         <!-- Home -->
-        <section id="home-screen" style="display: none;">
+        <section id="home-screen">
 
             <header id="header-container">
                 <nav id="navbar-container">
                     <div class="home-icon-container">
                         <img src="./src/assets/icons/home 1.png" alt="icone de casa referenciando a home do site"
-                            title="icone de casa referenciando a home do site">
+                            title="icone de casa referenciando a home do site" id="home-icon">
                     </div>
 
                     <div class="right-icons-nav">
@@ -139,7 +139,7 @@
                             title="Icone de pasta" data-target="modalProjetos">
                         <h2 class="nome-pasta">Skills</h2>
                     </div>
-                    <div class="pasta-content-container">
+                    <div class="pasta-content-container" id="pasta-games" data-target="modalGames">
                         <img src="./src/assets/icons/pasta.png" alt="icone de pasta amarelo com folhas brancas dentro"
                             title="Icone de pasta">
                         <h2 class="nome-pasta">Games</h2>
@@ -147,17 +147,17 @@
                 </div>
 
                 <div class="col-6">
-                    <div class="pasta-content-container">
+                    <div class="pasta-content-container" id="pasta-certificados" data-target="modalCertificados">
                         <img src="./src/assets/icons/pasta.png" alt="icone de pasta amarelo com folhas brancas dentro"
                             title="Icone de pasta">
                         <h2 class="nome-pasta">Certificações</h2>
                     </div>
-                    <div class="pasta-content-container">
+                    <div class="pasta-content-container" id="pasta-social" data-target="modalSocial">
                         <img src="./src/assets/icons/pasta.png" alt="icone de pasta amarelo com folhas brancas dentro"
                             title="Icone de pasta">
                         <h2 class="nome-pasta">Social</h2>
                     </div>
-                    <div class="pasta-content-container" id="pasta-contato">
+                    <div class="pasta-content-container" id="pasta-contato" data-target="modalContato">
                         <img src="./src/assets/icons/envelove-icon.png" alt="icone de envelope"
                             title="icone de envelope">
                         <h2 class="nome-pasta">Contato</h2>
@@ -518,6 +518,160 @@
                     </div>
         
                     <div class="modal-body">
+                        <div class="skills-main-container">
+                            <div class="tech-Skills">
+                                <h2>Skills Técnicas</h2>
+                                <div class="tech-skills-container">
+                                     
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" />
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg" />
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg" />
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg" />
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" />
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" />
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" />
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jquery/jquery-original.svg" />
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" />
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" />
+                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/electron/electron-original.svg" />
+          
+          
+                                </div>
+                            </div>
+
+                            <div class="soft-Skills">
+                                <h2>Skills Sociais</h2>
+                                <div class="soft-skills-container">
+                                    <ul class="soft-skills-list">
+                                        <li>Adaptabilidade</li>
+                                        <li>Flexibilidade</li>
+                                        <li>Empatia</li>
+                                        <li>Criatividade</li>
+                                        <li>Pensamento crítico</li>
+                                        <li>Trabalho em equipe</li>
+                                        <li>Atitude positiva</li>
+                                        <li>Proatividade</li>
+                                        <li>Ética de trabalho</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Games-->
+        <div class="modal fade" id="modalGames" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+
+                        <div class="info-pastas-modal-container">
+                            <div class="info-pastas-abertas">
+                                <h2 id="nome-pasta-modal">contato</h2>
+                                <button id="btn-close-pasta-arvore"><i class="fa-solid fa-circle-xmark"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="action-icons-modal">
+
+                            <img src="./src/assets/icons/mini-icon.png" alt="icone de minimizar modal">
+                            <img src="./src/assets/icons/full-icon.png" alt="icone de maximizar modal">
+                            <img src="./src/assets/icons/close-icon.png" alt="icone de fechar modal"
+                                data-bs-dismiss="modal" aria-label="Close">
+
+                        </div>
+                        <button type="button" class="close"></button>
+                    </div>
+
+                    <div class="modal-body">
+
+                        <div class="em-dev-container">
+                            <img src="./src/assets/img/Hahah funny dog!.jpeg" alt="">
+                            <span>Em Desenvolvimento!</span>
+                        </div>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Modal Certificações-->
+        <div class="modal fade" id="modalCertificados" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+
+                        <div class="info-pastas-modal-container">
+                            <div class="info-pastas-abertas">
+                                <h2 id="nome-pasta-modal">contato</h2>
+                                <button id="btn-close-pasta-arvore"><i class="fa-solid fa-circle-xmark"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="action-icons-modal">
+
+                            <img src="./src/assets/icons/mini-icon.png" alt="icone de minimizar modal">
+                            <img src="./src/assets/icons/full-icon.png" alt="icone de maximizar modal">
+                            <img src="./src/assets/icons/close-icon.png" alt="icone de fechar modal"
+                                data-bs-dismiss="modal" aria-label="Close">
+
+                        </div>
+                        <button type="button" class="close"></button>
+                    </div>
+
+                    <div class="modal-body">
+
+                        <div class="em-dev-container">
+                            <img src="./src/assets/img/Hahah funny dog!.jpeg" alt="">
+                            <span>Em Desenvolvimento!</span>
+                        </div>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Social-->
+        <div class="modal fade" id="modalSocial" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+
+                        <div class="info-pastas-modal-container">
+                            <div class="info-pastas-abertas">
+                                <h2 id="nome-pasta-modal">contato</h2>
+                                <button id="btn-close-pasta-arvore"><i class="fa-solid fa-circle-xmark"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="action-icons-modal">
+
+                            <img src="./src/assets/icons/mini-icon.png" alt="icone de minimizar modal">
+                            <img src="./src/assets/icons/full-icon.png" alt="icone de maximizar modal">
+                            <img src="./src/assets/icons/close-icon.png" alt="icone de fechar modal"
+                                data-bs-dismiss="modal" aria-label="Close">
+
+                        </div>
+                        <button type="button" class="close"></button>
+                    </div>
+
+                    <div class="modal-body">
+
+                        <div class="em-dev-container">
+                            <img src="./src/assets/img/Hahah funny dog!.jpeg" alt="">
+                            <span>Em Desenvolvimento!</span>
+                        </div>
                         
                     </div>
 

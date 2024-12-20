@@ -25,6 +25,19 @@
     transform: translateY(-100%);
 }
 
+@media (max-width: 500px) {
+    .content-horario-container strong{
+        padding: 0;
+        font-size: 7rem;
+        letter-spacing: 7px;
+    }
+    .content-horario-container span{
+        font-size: 1.8rem;
+        color: #555555;
+        transform: translateY(-50%);
+    }
+}
+
 .btn-container{
     padding: 20px;
 }
