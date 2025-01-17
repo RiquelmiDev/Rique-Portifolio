@@ -1,0 +1,68 @@
+.modal-content .modal-body .contato-container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 10px;
+    width: 31.25rem;
+}
+
+@media (max-width: 500px) {
+    .modal-content .modal-body .contato-container{
+        width: 18.75rem;
+        padding: 20px 10px;
+    }
+}
+
+.modal-content .modal-body .contato-container strong{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+.modal-content .modal-body .contato-container .groups-input{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.modal-content .modal-body .contato-container .groups-input input, select, textarea{
+    border-radius: 10px;
+    background-color: #555555;
+    border: 1.5px solid #555555; /* Ganbiarra para parar de mecher quando input focar e a borda empurrar os outros elementos */
+    padding: 10px;
+}
+
+.modal-content .modal-body .contato-container .groups-input input:focus, select:focus, textarea:focus{
+    border: 1.5px solid #EDE8D0;
+}
+
+.modal-content .modal-body .contato-container .groups-input input, select{
+    height: 2.5rem;
+}
+
+.modal-content .modal-body .contato-container .groups-input textarea{
+    height: 8rem;
+    resize: none;
+    scrollbar-color: #292929 #555555;
+}
+
+.modal-content .modal-body .contato-container button{
+    /* flex: 1; */
+    background-color: #25d366;
+    border-radius: 0.6rem;
+    padding: 0.6rem;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 500px) {
+
+    .modal-content .modal-body .contato-container .groups-input{
+        
+        gap: 2.5px;
+    }
+
+    .modal-content .modal-body .contato-container .groups-input textarea{
+        height: 5rem;
+    }
+    
+}

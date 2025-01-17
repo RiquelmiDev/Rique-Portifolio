@@ -1,0 +1,27 @@
+.modal-content .modal-body .projetos-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    overflow-y: scroll;
+    gap: 40px;
+    padding: 10px 40px;
+    width: 100%;
+    max-height: 700px;
+}
+@media (max-width: 500px) {
+    .modal-content .modal-body .projetos-container{
+        gap: 40px;
+        padding: 10px 40px;
+        width: auto;
+        max-height: 700px;
+    }
+}
+.modal-content .modal-body .projetos-container::-webkit-scrollbar{
+    background-color: #1E1E1E;
+    border-radius: 10px;
+    width: 0.9rem;
+}
+.modal-content .modal-body .projetos-container::-webkit-scrollbar-thumb{
+    background-color: #555555;
+    border-radius: 10px;
+}
