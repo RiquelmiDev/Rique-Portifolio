@@ -5,6 +5,6 @@ export const acessaHome = ()=>{
 }
 
 export const abreFechaPastas = (id)=>{
-    cy.get(id).click();
-    cy.get('#btn-close-modal').click();
+    cy.get(id).dblclick();
+    cy.get('.btn-close-modal').click();
 }
