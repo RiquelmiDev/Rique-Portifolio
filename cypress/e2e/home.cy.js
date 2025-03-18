@@ -1,8 +1,4 @@
-const acessaHome = ()=>{
-    cy.visit('https://riqueportifoliodev.netlify.app/'); 
-    cy.get('#btn-enter-sistem').click();
-    cy.get('#btn-login').click();
-}
+import { acessaHome } from './atalhos/home';
 
 describe('Teste de funcionalidades da tela de Home', () => {
 
@@ -19,6 +15,11 @@ describe('Teste de funcionalidades da tela de Home', () => {
     it('Deve ir para a tela de politica e privacidade', () => {
         acessaHome(); 
         cy.get('.right-icons-nav > a').click();
+    });
+
+    it('Deve abrir e fechar todas as pastas', () => {
+        acessaHome();
+        cy.get('#pasta-sobre').dblclick();
     });
 
 });
